@@ -1,0 +1,58 @@
+// Importa todos los archivos de la carpeta utilidades, y luego importa el archivo que necesites .
+// siempre importa si no no se va a reflejar en tu CSS.
+@import 'utilidades/lista';
+@import "utilidades/mixin";
+
+*{ @include medidas (0,0); box-sizing: border-box;}
+header{
+  background-color: nth($list-colors, 1);
+  height: var(--altura_header );
+}
+ h1{
+    color: nth($list-colors, 2); 
+    font-family: nth($list-fonts, 5);
+    text-align: center;
+  }
+ p, .tex  {@include medidas(1rem,1rem);
+   font-family:cursive;
+  font-weight: bold;font-size: 1.1rem;} 
+
+body{
+    @include medidas (0,0); //mixin
+background: radial-gradient(circle, rgba(160, 154, 146, 0.695) 20%, rgb(243, 172, 18),);}
+footer{ text-align:center ;}
+.logo 
+   { @include logo (20%,20%);  
+    border-radius: 55%;}
+button{ @include logo (15,10);
+  background-color: nth($list-colors, 1);
+  border: 1px solid nth($list-colors, 4);
+  cursor: pointer;
+&:hover {
+    background-color: nth($list-colors, 2);
+    color: nth($list-colors, 4);
+  }
+}
+section{
+  h2{
+    @include medidas (1%,2%);
+  }
+}
+
+.container{
+  width: 75vw;
+  max-width: 1000px;
+  min-width: 320px;
+  margin: auto;
+}
+
+img{
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 3px 5 px rgba(160, 154, 146, 0.695);
+}
+
+div{ul{ position: absolute;display: flex;flex-direction: column;justify-content: center ; gap:2rem; ;li{ list-style: none; li:hover{background-color: rgb(20, 29, 29);padding: .2rem .7rem;; } a{ justify-content: center;align-items: center; font-size: 2rem; font-weight: bold; }}}}
+//mixin
+ //PARA LLAMAR A MIXIN SE HACE DE LA SIGUIENTE MANERA @include "nombre DEL ARICHIVO EJEMPLO " mixin(parametro1, parametro2, parametro3, etc); "solo los numeros de los parametros.
+ // FALTA APLICAR ANIMACIONES , APLICAR FLEXBOX, GRID. 

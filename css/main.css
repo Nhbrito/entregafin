@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(36, 36, 41);
+  height: var(--altura_header);
+}
+
+h1 {
+  color: rgb(134, 26, 26);
+  font-family: "Trebuchet MS";
+  text-align: center;
+}
+
+p, .tex {
+  margin: 1rem;
+  padding: 1rem;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle, rgba(160, 154, 146, 0.695) 20%, rgb(173, 118, 0));
+}
+
+footer {
+  text-align: center;
+}
+
+.logo {
+  height: 20%;
+  width: 20%;
+  border-radius: 55%;
+}
+
+button {
+  height: 15;
+  width: 10;
+  background-color: rgb(36, 36, 41);
+  border: 1px solid rgb(255, 255, 255);
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(134, 26, 26);
+  color: rgb(255, 255, 255);
+}
+
+section h2 {
+  margin: 1%;
+  padding: 2%;
+}
+
+.container {
+  width: 75vw;
+  max-width: 1000px;
+  min-width: 320px;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 3px 5 px rgba(160, 154, 146, 0.695);
+}
+
+div ul {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+div ul li {
+  list-style: none;
+}
+div ul li li:hover {
+  background-color: rgb(20, 29, 29);
+  padding: 0.2rem 0.7rem;
+}
+div ul li a {
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=main.css.map */
